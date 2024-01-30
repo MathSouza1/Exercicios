@@ -2,7 +2,7 @@ package generics;
 
 import java.util.TreeSet;
 
-public class ComparableTeste {
+public class ComparableTest {
 
     public static void main(String[] args) {
         TreeSet<Integer> nums = new TreeSet<>();

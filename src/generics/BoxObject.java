@@ -1,14 +1,14 @@
 package generics;
 
-public class CaixaObjeto {
+public class BoxObject {
 
     private Object coisa;
 
-    public void guardar(Object coisa) {
+    public void save(Object coisa) {
         this.coisa = coisa;
     }
 
-    public Object abrir() {
+    public Object open() {
         return coisa;
     }
 }

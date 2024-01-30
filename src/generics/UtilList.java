@@ -2,13 +2,13 @@ package generics;
 
 import java.util.List;
 
-public class ListaUtil {
+public class UtilList {
 
-    public static Object getUltimo1(List<?> lista) {
+    public static Object getLastObject(List<?> lista) {
         return lista.get(lista.size() - 1);
     }
 
-    public static <T> T getUltimo2(List<T> lista) {
+    public static <T> T getLastT(List<T> lista) {
         return lista.get(lista.size() - 1);
     }
 }
