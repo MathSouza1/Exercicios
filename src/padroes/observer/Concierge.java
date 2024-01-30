@@ -16,8 +16,8 @@ public class Concierge {
 
         String value = "";
 
-        while(!"sair".equalsIgnoreCase(value)) {
-            System.out.print("Aniversariante chegou? ");
+        while(!"exit".equalsIgnoreCase(value)) {
+            System.out.print("Has the birthday person arrived? ");
             value = input.nextLine();
 
             if("sim".equalsIgnoreCase(value)) {
@@ -27,9 +27,9 @@ public class Concierge {
                 // notificar os observadores!
                 observerArrivalBirthdayBoys.stream()
                         .forEach(observers -> observers.arrived(event));
-                value = "sair";
+                value = "exit";
             } else {
-                System.out.println("Alarme falso!");
+                System.out.println("False alarm!");
             }
         }
         input.close();

@@ -6,8 +6,8 @@ public class BirthdaySurprise {
         Girlfriend girlfriend = new Girlfriend();
         concierge.registerObserver(girlfriend);
         concierge.registerObserver(register -> {
-            System.out.println("Surprise by lmabda");
-            System.out.println("Ocorred in: " + register.getMoment());
+            System.out.println("Surprise by lambda");
+            System.out.println("Occurred in: " + register.moment());
         });
         concierge.monitor();
     }
